@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="author" content="alex ulloa fuentes"/>
+        <meta name="description" content="pagina para completar proyecto fundamentos de html"/>
+        <meta name="keywords" content="html,fundamentos,svg"/>
+        <meta name="viewport" content="width=width-device, user-scalable=no"/>
+        <style>
+             h1
+            {
+                background: rgb(34, 34, 221);
+                color: azure;
+            }
+            h2
+            {
+                background: rgb(168, 58, 58);
+                color: azure;
+            }
+            h3
+            {
+                color: rgb(34, 34, 221);
+            }
+            nav
+            {
+                background: rgb(34, 34, 221);
+                color: azure; 
+            }
+            a
+            {
+                color: azure;
+            }
+            legend
+            {
+                background: rgb(168, 58, 58);
+                color: azure;
+            }
+        </style>
+        <title>PROYECTO FINAL DE FUNDAMENTOS DE HTML - EDUCACION</title>
+    </head>
+    <body>
+        <header>
+            <svg>
+                <image xlink:href="Imagenes/Logotipo.svg" width="200px" height="200px"></image>
+            </svg>
+            <h1>
+                HOJA DE VIDA
+            </h1>
+            <h2>
+                DATOS PERSONALES
+            </h2>
+            <h3>
+                <p>NOMBRE: REYNALDO ALEX ULLOA FUENTES</p> 
+                <p>FECHA DE NACIMIENTO: 07/02/1982</p>
+            </h3>
+            
+        </header>
+        <nav>
+            <strong>| <a href="index.html" target="_blank">INICIO</a> |</strong> 
+            <strong>| <a href="educacion.html" target="_blank">EDUCACION</a> |</strong> 
+            <strong>| <a href="experiencia.html" target="blank">EXPERIENCIA</a>|</strong>
+        </nav>
+        <section>
+            <h2>
+                EDUCACI&Oacute;N
+            </h2>
+            <br/>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>A&Ntilde;O</th>
+                        <th>INSTITUCI&Oacute;N</th>
+                        <th>LUGAR</th>
+                        <th>&#191CULMIN&Oacute;&#63</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2019</td>
+                        <td>ACADEMIA MIKROTIK - FDCPS</td>
+                        <td>ORURO - BOLIVIA</td>
+                        <td>SI</td>
+                    </tr>
+                    <tr>
+                        <td>2019</td>
+                        <td>ESCUELA DE GESTION PUBLICA</td>
+                        <td>LA PAZ - BOLIVIA</td>
+                        <td>SI</td>
+                    </tr>
+                    <tr>
+                        <td>2019</td>
+                        <td>ACADEMIA LINUX - FDCPS</td>
+                        <td>ORURO - BOLIVIA</td>
+                        <td>SI</td>
+                    </tr>
+                </tbody>                
+            </table>
+            <br/>
+            <form autocomplete="yes" name="formulario1">
+                <fieldset>
+                    <legend><strong>AGREGAR ESTUDIOS</strong></legend>
+                    <br/>
+                    <label for="anio">A&Ntilde;O: </label>
+                    <select id="anio" name="anio">
+                        <option>2019</option>
+                        <option>2018</option>
+                        <option>2017</option>
+                        <option>2016</option>
+                        <option>2015</option>
+                        <option>2014</option>
+                    </select>
+                    <br/>
+                    <br/>
+                    <label for="institucion">INSTITUCI&Oacute;N:</label>
+                    <input type="text" required/>
+                    <br/>
+                    <br/>
+                    <label for="lugar">LUGAR:</label>
+                    <textarea cols="20" rows="10" id="lugar" name="lugar"></textarea>
+                    <br/>
+                    <br/>
+                    <input type="submit" id="enviar" name="enviar" value="ENVIAR"/>
+                </fieldset>                
+            </form>
+        </section>
+        <footer>
+            <p>
+                correo electr&oacute;nico: alexulloafuentes&#64gmail.com
+                <br/>
+                ORURO - BOLIVIA
+            </p>
+        </footer>
+    </body>
+</html>
